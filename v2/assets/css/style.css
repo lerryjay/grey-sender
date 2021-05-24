@@ -1,0 +1,16 @@
+:root {
+  --blue: #1e90ff;
+  --white: #ffffff;
+  --black:#000000;
+  --dark-purple:#01024E
+}
+
+body { background-color: var(--black); }
+
+.bg-dark-purple{ background-color: var(--dark-purple); }
+
+.form-control{ border-radius: 0px !important;}
+
+.mid-area{  min-height: 150px; }
+
+label{ font-weight: bold; }
