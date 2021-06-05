@@ -17,15 +17,15 @@
       <span class="navbar-brand mb-0 text-light h1 font-weight-bold">GREY Mailer</span>
     </nav>
   </header>
-  <form method="POST" enctype="multipart/form-data" action="http://localhost/Mailer/resource/index.php"  >
+  <form method="POST" enctype="multipart/form-data" action="http://localhost/mailer/v2/resource/index.php"  >
     <div class="container-fluid">
       <div class="row px-md-5 pt-md-5">
         <div class="col-md-6">
           <div class="form-group">
             <label for="recipients">Recipients:</label>
             <select class="form-control" name="recipients" id="recipients">
-              <option value="email">Email</option> 
-              <option value="mailfile">File (mails;.txt)</option> 
+              <option value="email">Email</option>
+              <option value="mailfile">File (mails;.txt)</option>
               <option value="combofile">File (combos;.txt)</option>
               <option value="mailtext">Mail Text</option>
               <option value="combotext">Combo Text</option>
@@ -46,7 +46,7 @@
     </div>
     <div class="container-fluid">
       <div class="row bg-dark-purple mid-area px-md-5 pt-md-4 my-md-5">
-        <div class="col-md-6">   
+        <div class="col-md-6">
           <div class="form-group d-none"  id="recipients-combofile-input">
             <label for="combo-text">Combo File:</label>
             <input class="form-control" type="file" type="combofile" name="combofile" />
@@ -118,8 +118,8 @@
         </div>
         <div class="col-md-6">
           <div class="form-group">
-            <label for="senderemail">Sender Email:</label>
-            <input type="email" class="form-control" name="senderemail" id="senderemail">
+              <label for="message">Reply To:</label>
+              <textarea class="form-control" rows="1" name="message" id="message" rows="3"></textarea>
           </div>
         </div>
         <div class="col-md-6">
@@ -150,4 +150,3 @@
 </body>
 <script src="./assets/js/main.js"></script>
 </html>
-
